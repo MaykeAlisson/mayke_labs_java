@@ -1,14 +1,11 @@
 # MaykeLabs Java
 
-- ### Comunicação RabbitMQ
-        - Consumir fila
-        - Publicar em fila
-
-- ### Comunicação Redis
-        - Gravar registro com tempo de espiração
-
-- ### Schedule jobs
-        - Criar job para rodar automaticamente
-
-- ### Threed
-        - Testar novo modelo de threed do java 19 
+- [x] RabbitMQ (Consumir/Publicar)
+- [ ] Redis (Criar cache com tempo)
+- [ ] Schedule (Criar job de hora em hora)
+- [ ] File (Ler e mover CSV)
+- [ ] RateLimit (Criar rateLimit de 10 por minuto)
+- [ ] TwoFactor (Autenticacao em 2 fatores)
+- [ ] Websocket
+- [ ] Threed (Novo modelo do java 19)
+- [ ] Multitenant
