@@ -20,9 +20,16 @@ spring:
     port: 5672
     username: guest
     password: guest
+  redis:
+    host: localhost
+    port: 6379
+  cache:
+    type: redis
+    redis:
+      time-to-live: 10_000
 
 queue-service:
   write: labs_posts
   listener: labs_subscribes
   exchange: labs
-  route-key: posts-route
+  route-key: labs.posts-route

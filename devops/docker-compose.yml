@@ -8,6 +8,16 @@ services:
     ports:
       - "15672:15672"
       - "5672:5672"
+    volumes:
+      - ./rabbitmq/definitions.json:/opt/definitions.json:ro
+      - ./rabbitmq/rabbitmq.config:/etc/rabbitmq/rabbitmq.config:ro
+    networks:
+      - labs
+  redis:
+    container_name: cache
+    image: redis
+    ports:
+      - "6379:6379"
     networks:
       - labs
 
